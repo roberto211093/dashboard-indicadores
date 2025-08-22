@@ -1,0 +1,16 @@
+@use './tokens' as *;
+
+:root { color-scheme: dark; }
+
+* { box-sizing: border-box; }
+html, body, #root { height: 100%; }
+body {
+  margin: 0;
+  background: $color-bg;
+  color: $color-text;
+  font-family: $font;
+}
+
+.container {
+  max-width: 1000px; margin: 0 auto; padding: calc($space * 2);
+}
